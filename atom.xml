@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-23T05:40:18.489Z</updated>
+  <updated>2019-01-23T06:13:49.823Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,9 +17,409 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
+    <title>2. Add Two Numbers</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_2/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_2/</id>
+    <published>2019-01-20T02:43:26.000Z</published>
+    <updated>2019-01-23T06:13:49.823Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：2-Add-Two-Numbers&quot;&gt;&lt;a href=&quot;#题目：2-Add-Two-Numbers&quot; class=&quot;headerlink&quot; title=&quot;题目：2. Add Two Numbers&quot;&gt;&lt;/a&gt;题目：2. Add Two Numbers&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;两个非空链表，逆序存储，相加。&lt;/li&gt;
+&lt;li&gt;Example:&lt;/li&gt;
+&lt;li&gt;Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4)&lt;/li&gt;
+&lt;li&gt;Output: 7 -&amp;gt; 0 -&amp;gt; 8&lt;/li&gt;
+&lt;li&gt;Explanation: 342 + 465 = 807.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
     <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_3/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_3/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_22/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_22/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_12/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_12/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_11/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_11/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_13/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_13/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_14/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_14/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_15/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_15/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_17/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_17/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_16/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_16/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_1/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_1/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T06:13:26.138Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;确定一给定数组中存在两数相加得到指定数值。&lt;/li&gt;
+&lt;li&gt;数组中元素不可重复使用，若解存在则唯一。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_18/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_18/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_19/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_19/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_20/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_20/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_21/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_21/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_23/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_23/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_10/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_10/</id>
     <published>2019-01-20T02:43:25.000Z</published>
     <updated>2019-01-23T05:40:18.489Z</updated>
     
@@ -41,8 +441,89 @@
   
   <entry>
     <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_1/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_1/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_24/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_24/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_26/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_26/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_25/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_25/</id>
+    <published>2019-01-20T02:43:25.000Z</published>
+    <updated>2019-01-23T05:46:16.692Z</updated>
+    
+    <summary type="html">
+    
+      
+      
+        
+        
+          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
+&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
+        
+      
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>1.Two Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_28/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_28/</id>
     <published>2019-01-20T02:43:25.000Z</published>
     <updated>2019-01-23T05:46:16.692Z</updated>
     
