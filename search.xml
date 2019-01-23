@@ -11,15 +11,4 @@
         <tag>LeetCode</tag>
       </tags>
   </entry>
-  <entry>
-    <title><![CDATA[1.Two Sum]]></title>
-    <url>%2F2019%2F01%2F20%2Fdemo%2F</url>
-    <content type="text"><![CDATA[��Ŀ��1. Two Sum���������� ȷ��һ���������д���������ӵõ�ָ����ֵ�� ������Ԫ�ز����ظ�ʹ�ã����������Ψһ�� ��Ŀ������ ע������������ ��ⷽ���� �����ƽ⡣ ͨ��HashMap������ֵ���±���й������ڹ���������ֱ���жϣ�Map.contains(target-currentElement) �㷨˼�룺 �ڹ���������ֱ���жϣ�map.contains(target-currentElement)�Ŀ��������ڣ� ÿһ���¼����Ԫ�ض�����map�����е�Ԫ�ؽ��бȽϣ����£� 1,2,3,4…… (1,2) (1,3),(2,3) (1,4),(2,3),(3,4) …… ֪ʶ����չ�� HashMap�Ĵ洢�ṹ������(ɢ��Ͱ)+���� HashMap��get��������nullʱ���������:getNode(hash(key),key)==null ���� getNode(hash(key),key)!=null����e.value==null(value����putΪ��ֵ) containsKey(Object key)ͨ���б�getNode(hash(key),key)�ķ���ֵ��ȷ��keyֵ�Ĵ����ԡ� �ڸ���1.8�汾֮�󣬽�������ﵽ8��������תΪ�����������6����ʹ�������� Դ������: public V get(Object key) { Node&lt;K,V&gt; e; return (e = getNode(hash(key), key)) == null ? null : e.value; } final Node&lt;K,V&gt; getNode(int hash, Object key) { Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k; if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp; (first = tab[(n - 1) &amp; hash]) != null) { if (first.hash == hash &amp;&amp; // always check first node ((k = first.key) == key || (key != null &amp;&amp; key.equals(k)))) return first; if ((e = first.next) != null) { if (first instanceof TreeNode) return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key); do { if (e.hash == hash &amp;&amp; ((k = e.key) == key || (key != null &amp;&amp; key.equals(k)))) return e; } while ((e = e.next) != null); } } return null; } public boolean containsKey(Object key) { return getNode(hash(key), key) != null; } �ܽ���� ����=���ݽṹ+�㷨��������˼·�ؼ��������ݽṹ��HashMap�������á� HashMap��hashCode�ļ��㷽����������ѧ����������Ȥ�������˽⡣ ���˵���� ����LeetCodeƽ̨�㷨��һ��ˢ���¼�� �Ѿ�������public repository���ֿ����� ��ӭ������fork��push������ش��󡢽���������⣡(�����˸�����Ŷ��) ���˲��ͣ�GZHarryAnonymous ��ӭ���ã���Ȼ��������û����;͸����������� �������ޣ�ϣ���аﵽ�㣡]]></content>
-      <categories>
-        <category>Algorithm</category>
-      </categories>
-      <tags>
-        <tag>LeetCode</tag>
-      </tags>
-  </entry>
 </search>
