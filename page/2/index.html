@@ -429,7 +429,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_18/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_20/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="gz">
@@ -449,7 +449,7 @@
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/20/LeetCode/LeetCode_18/" class="post-title-link" itemprop="url">1.Two Sum</a>
+                <a href="/2019/01/20/LeetCode/LeetCode_20/" class="post-title-link" itemprop="url">20. Valid Parentheses</a>
               
             
           </h1>
@@ -474,7 +474,7 @@
                 
               
 
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
+              <time title="创建时间：2019-01-20 10:43:44" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:44+08:00">2019-01-20</time>
             
 
             
@@ -491,7 +491,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-23 13:46:16" itemprop="dateModified" datetime="2019-01-23T13:46:16+08:00">2019-01-23</time>
+                <time title="修改时间：2019-01-23 14:22:08" itemprop="dateModified" datetime="2019-01-23T14:22:08+08:00">2019-01-23</time>
               
             
           </span>
@@ -544,81 +544,18 @@
 
       
         
+          <h3 id="题目：20-Valid-Parentheses"><a href="#题目：20-Valid-Parentheses" class="headerlink" title="题目：20. Valid Parentheses"></a>题目：20. Valid Parentheses</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>Given a string containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[‘ and ‘]’, determine if the input string is valid.</li>
+</ul>
+          <!--noindex-->
           
-            <a id="more"></a>
-<h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
-</ul>
-<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
-</ul>
-<h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
-</ol>
-<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
-</ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
-</ul>
-<blockquote>
-</blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
-}
-
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
-        }
-    }
-    return null;
-}
-
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
-}
-</code></pre><blockquote>
-</blockquote>
-<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
-</ul>
-<h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
-<li>基于LeetCode平台算法的一个刷题记录！</li>
-<li>已经共享至public repository：<a href="https://github.com/GZHarryAnonymous/LeetCode" target="_blank" rel="noopener">仓库链接</a></li>
-<li>欢迎题友们fork、push纠正相关错误、交流相关问题！(别忘了给颗星哦！)</li>
-<li>个人博客：<a href="https://gzharryanonymous.github.io/" target="_blank" rel="noopener">GZHarryAnonymous</a></li>
-<li>欢迎来访！当然，如果来访还打赏就更好啦！！！</li>
-<li>能力有限，希望有帮到你！</li>
-</ul>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_20/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -699,7 +636,7 @@ public boolean containsKey(Object key) {
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/20/LeetCode/LeetCode_19/" class="post-title-link" itemprop="url">1.Two Sum</a>
+                <a href="/2019/01/20/LeetCode/LeetCode_19/" class="post-title-link" itemprop="url">19. Remove Nth Node From End of List</a>
               
             
           </h1>
@@ -724,7 +661,7 @@ public boolean containsKey(Object key) {
                 
               
 
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
+              <time title="创建时间：2019-01-20 10:43:43" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:43+08:00">2019-01-20</time>
             
 
             
@@ -741,7 +678,7 @@ public boolean containsKey(Object key) {
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-23 13:46:16" itemprop="dateModified" datetime="2019-01-23T13:46:16+08:00">2019-01-23</time>
+                <time title="修改时间：2019-01-23 14:21:57" itemprop="dateModified" datetime="2019-01-23T14:21:57+08:00">2019-01-23</time>
               
             
           </span>
@@ -794,1014 +731,13 @@ public boolean containsKey(Object key) {
 
       
         
-          
-            <a id="more"></a>
-<h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
-</ul>
-<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
-</ul>
-<h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
-</ol>
-<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
-</ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
-</ul>
-<blockquote>
-</blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
-}
-
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
-        }
-    }
-    return null;
-}
-
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
-}
-</code></pre><blockquote>
-</blockquote>
-<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
-</ul>
-<h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
-<li>基于LeetCode平台算法的一个刷题记录！</li>
-<li>已经共享至public repository：<a href="https://github.com/GZHarryAnonymous/LeetCode" target="_blank" rel="noopener">仓库链接</a></li>
-<li>欢迎题友们fork、push纠正相关错误、交流相关问题！(别忘了给颗星哦！)</li>
-<li>个人博客：<a href="https://gzharryanonymous.github.io/" target="_blank" rel="noopener">GZHarryAnonymous</a></li>
-<li>欢迎来访！当然，如果来访还打赏就更好啦！！！</li>
-<li>能力有限，希望有帮到你！</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-	<div>
-      
-    </div>
-	
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-    <div>
-      
-    </div>
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_20/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="gz">
-      <meta itemprop="description" content="Just share with you!">
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="GZHarryAnonymous's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/01/20/LeetCode/LeetCode_20/" class="post-title-link" itemprop="url">1.Two Sum</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-01-23 13:46:16" itemprop="dateModified" datetime="2019-01-23T13:46:16+08:00">2019-01-23</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <a id="more"></a>
-<h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
-</ul>
-<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
-</ul>
-<h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
-</ol>
-<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
-</ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
-</ul>
-<blockquote>
-</blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
-}
-
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
-        }
-    }
-    return null;
-}
-
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
-}
-</code></pre><blockquote>
-</blockquote>
-<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
-</ul>
-<h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
-<li>基于LeetCode平台算法的一个刷题记录！</li>
-<li>已经共享至public repository：<a href="https://github.com/GZHarryAnonymous/LeetCode" target="_blank" rel="noopener">仓库链接</a></li>
-<li>欢迎题友们fork、push纠正相关错误、交流相关问题！(别忘了给颗星哦！)</li>
-<li>个人博客：<a href="https://gzharryanonymous.github.io/" target="_blank" rel="noopener">GZHarryAnonymous</a></li>
-<li>欢迎来访！当然，如果来访还打赏就更好啦！！！</li>
-<li>能力有限，希望有帮到你！</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-	<div>
-      
-    </div>
-	
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-    <div>
-      
-    </div>
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_21/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="gz">
-      <meta itemprop="description" content="Just share with you!">
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="GZHarryAnonymous's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/01/20/LeetCode/LeetCode_21/" class="post-title-link" itemprop="url">1.Two Sum</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-01-23 13:46:16" itemprop="dateModified" datetime="2019-01-23T13:46:16+08:00">2019-01-23</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <a id="more"></a>
-<h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
-</ul>
-<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
-</ul>
-<h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
-</ol>
-<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
-</ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
-</ul>
-<blockquote>
-</blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
-}
-
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
-        }
-    }
-    return null;
-}
-
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
-}
-</code></pre><blockquote>
-</blockquote>
-<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
-</ul>
-<h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
-<li>基于LeetCode平台算法的一个刷题记录！</li>
-<li>已经共享至public repository：<a href="https://github.com/GZHarryAnonymous/LeetCode" target="_blank" rel="noopener">仓库链接</a></li>
-<li>欢迎题友们fork、push纠正相关错误、交流相关问题！(别忘了给颗星哦！)</li>
-<li>个人博客：<a href="https://gzharryanonymous.github.io/" target="_blank" rel="noopener">GZHarryAnonymous</a></li>
-<li>欢迎来访！当然，如果来访还打赏就更好啦！！！</li>
-<li>能力有限，希望有帮到你！</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-	<div>
-      
-    </div>
-	
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-    <div>
-      
-    </div>
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_23/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="gz">
-      <meta itemprop="description" content="Just share with you!">
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="GZHarryAnonymous's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/01/20/LeetCode/LeetCode_23/" class="post-title-link" itemprop="url">1.Two Sum</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-01-23 13:46:16" itemprop="dateModified" datetime="2019-01-23T13:46:16+08:00">2019-01-23</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          
-            <a id="more"></a>
-<h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
-</ul>
-<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
-</ul>
-<h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
-</ol>
-<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
-</ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
-</ul>
-<blockquote>
-</blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
-}
-
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
-        }
-    }
-    return null;
-}
-
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
-}
-</code></pre><blockquote>
-</blockquote>
-<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
-</ul>
-<h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
-<li>基于LeetCode平台算法的一个刷题记录！</li>
-<li>已经共享至public repository：<a href="https://github.com/GZHarryAnonymous/LeetCode" target="_blank" rel="noopener">仓库链接</a></li>
-<li>欢迎题友们fork、push纠正相关错误、交流相关问题！(别忘了给颗星哦！)</li>
-<li>个人博客：<a href="https://gzharryanonymous.github.io/" target="_blank" rel="noopener">GZHarryAnonymous</a></li>
-<li>欢迎来访！当然，如果来访还打赏就更好啦！！！</li>
-<li>能力有限，希望有帮到你！</li>
-</ul>
-
-          
-        
-      
-    </div>
-
-    
-
-	<div>
-      
-    </div>
-	
-    
-    
-    
-
-    
-
-    
-      
-    
-    
-    <div>
-      
-    </div>
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
-  </div>
-  
-  
-  
-  </article>
-
-
-    
-      
-
-  
-
-  
-  
-  
-
-  
-
-  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_10/">
-
-    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="gz">
-      <meta itemprop="description" content="Just share with you!">
-      <meta itemprop="image" content="/images/header.jpg">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="GZHarryAnonymous's blog">
-    </span>
-
-    
-      <header class="post-header">
-
-        
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                
-                <a href="/2019/01/20/LeetCode/LeetCode_10/" class="post-title-link" itemprop="url">1.Two Sum</a>
-              
-            
-          </h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-
-            
-            
-            
-
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">发表于</span>
-              
-
-              
-                
-              
-
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
-            
-
-            
-              
-
-              
-                
-                <span class="post-meta-divider">|</span>
-                
-
-                <span class="post-meta-item-icon">
-                  <i class="fa fa-calendar-check-o"></i>
-                </span>
-                
-                  <span class="post-meta-item-text">更新于</span>
-                
-                <time title="修改时间：2019-01-23 13:40:18" itemprop="dateModified" datetime="2019-01-23T13:40:18+08:00">2019-01-23</time>
-              
-            
-          </span>
-
-          
-            <span class="post-category">
-            
-              <span class="post-meta-divider">|</span>
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-folder-o"></i>
-              </span>
-              
-                <span class="post-meta-item-text">分类于</span>
-              
-              
-                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
-
-                
-                
-              
-            </span>
-          
-
-          
-            
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
-        
-          <h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
+          <h3 id="题目：19-Remove-Nth-Node-From-End-of-List"><a href="#题目：19-Remove-Nth-Node-From-End-of-List" class="headerlink" title="题目：19. Remove Nth Node From End of List"></a>题目：19. Remove Nth Node From End of List</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>求给定链表移除倒数(从尾部开始数)第n个节点后的新链表。</li>
 </ul>
           <!--noindex-->
           
             <div class="post-button text-center">
-              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_10/#more" rel="contents">
+              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_19/#more" rel="contents">
                 阅读全文 &raquo;
               </a>
             </div>
@@ -1867,7 +803,7 @@ public boolean containsKey(Object key) {
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_24/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_18/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="gz">
@@ -1887,7 +823,7 @@ public boolean containsKey(Object key) {
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/20/LeetCode/LeetCode_24/" class="post-title-link" itemprop="url">1.Two Sum</a>
+                <a href="/2019/01/20/LeetCode/LeetCode_18/" class="post-title-link" itemprop="url">18. 4Sum</a>
               
             
           </h1>
@@ -1912,7 +848,7 @@ public boolean containsKey(Object key) {
                 
               
 
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
+              <time title="创建时间：2019-01-20 10:43:42" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:42+08:00">2019-01-20</time>
             
 
             
@@ -1929,7 +865,7 @@ public boolean containsKey(Object key) {
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-23 13:46:16" itemprop="dateModified" datetime="2019-01-23T13:46:16+08:00">2019-01-23</time>
+                <time title="修改时间：2019-01-23 14:21:44" itemprop="dateModified" datetime="2019-01-23T14:21:44+08:00">2019-01-23</time>
               
             
           </span>
@@ -1982,81 +918,18 @@ public boolean containsKey(Object key) {
 
       
         
+          <h3 id="题目：18-4Sum"><a href="#题目：18-4Sum" class="headerlink" title="题目：18. 4Sum"></a>题目：18. 4Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>给定一个数组和目标值，求元素之和等于目标值的所有子数组(包含4个元素)。</li>
+</ul>
+          <!--noindex-->
           
-            <a id="more"></a>
-<h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
-</ul>
-<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
-</ul>
-<h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
-</ol>
-<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
-</ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
-</ul>
-<blockquote>
-</blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
-}
-
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
-        }
-    }
-    return null;
-}
-
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
-}
-</code></pre><blockquote>
-</blockquote>
-<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
-</ul>
-<h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
-<li>基于LeetCode平台算法的一个刷题记录！</li>
-<li>已经共享至public repository：<a href="https://github.com/GZHarryAnonymous/LeetCode" target="_blank" rel="noopener">仓库链接</a></li>
-<li>欢迎题友们fork、push纠正相关错误、交流相关问题！(别忘了给颗星哦！)</li>
-<li>个人博客：<a href="https://gzharryanonymous.github.io/" target="_blank" rel="noopener">GZHarryAnonymous</a></li>
-<li>欢迎来访！当然，如果来访还打赏就更好啦！！！</li>
-<li>能力有限，希望有帮到你！</li>
-</ul>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_18/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -2117,7 +990,7 @@ public boolean containsKey(Object key) {
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_26/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_17/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="gz">
@@ -2137,7 +1010,7 @@ public boolean containsKey(Object key) {
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/20/LeetCode/LeetCode_26/" class="post-title-link" itemprop="url">1.Two Sum</a>
+                <a href="/2019/01/20/LeetCode/LeetCode_17/" class="post-title-link" itemprop="url">17. Letter Combinations of a Phone Number</a>
               
             
           </h1>
@@ -2162,7 +1035,7 @@ public boolean containsKey(Object key) {
                 
               
 
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
+              <time title="创建时间：2019-01-20 10:43:41" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:41+08:00">2019-01-20</time>
             
 
             
@@ -2179,7 +1052,7 @@ public boolean containsKey(Object key) {
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-23 13:46:16" itemprop="dateModified" datetime="2019-01-23T13:46:16+08:00">2019-01-23</time>
+                <time title="修改时间：2019-01-23 14:21:28" itemprop="dateModified" datetime="2019-01-23T14:21:28+08:00">2019-01-23</time>
               
             
           </span>
@@ -2232,81 +1105,20 @@ public boolean containsKey(Object key) {
 
       
         
+          <h3 id="题目：17-Letter-Combinations-of-a-Phone-Number"><a href="#题目：17-Letter-Combinations-of-a-Phone-Number" class="headerlink" title="题目：17. Letter Combinations of a Phone Number"></a>题目：17. Letter Combinations of a Phone Number</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>计算器(3乘以3)，1不映射。2映射（abc），3映射（def）以此类推，9映射（wxyz）。</li>
+<li>给定”23”</li>
+<li>输出[“ad”, “ae”, “af”, “bd”, “be”, “bf”, “cd”, “ce”, “cf”]</li>
+</ul>
+          <!--noindex-->
           
-            <a id="more"></a>
-<h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
-</ul>
-<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
-</ul>
-<h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
-</ol>
-<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
-</ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
-</ul>
-<blockquote>
-</blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
-}
-
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
-        }
-    }
-    return null;
-}
-
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
-}
-</code></pre><blockquote>
-</blockquote>
-<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
-</ul>
-<h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
-<li>基于LeetCode平台算法的一个刷题记录！</li>
-<li>已经共享至public repository：<a href="https://github.com/GZHarryAnonymous/LeetCode" target="_blank" rel="noopener">仓库链接</a></li>
-<li>欢迎题友们fork、push纠正相关错误、交流相关问题！(别忘了给颗星哦！)</li>
-<li>个人博客：<a href="https://gzharryanonymous.github.io/" target="_blank" rel="noopener">GZHarryAnonymous</a></li>
-<li>欢迎来访！当然，如果来访还打赏就更好啦！！！</li>
-<li>能力有限，希望有帮到你！</li>
-</ul>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_17/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -2367,7 +1179,7 @@ public boolean containsKey(Object key) {
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_25/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_16/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="gz">
@@ -2387,7 +1199,7 @@ public boolean containsKey(Object key) {
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/20/LeetCode/LeetCode_25/" class="post-title-link" itemprop="url">1.Two Sum</a>
+                <a href="/2019/01/20/LeetCode/LeetCode_16/" class="post-title-link" itemprop="url">16. 3Sum Closest</a>
               
             
           </h1>
@@ -2412,7 +1224,7 @@ public boolean containsKey(Object key) {
                 
               
 
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
+              <time title="创建时间：2019-01-20 10:43:40" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:40+08:00">2019-01-20</time>
             
 
             
@@ -2429,7 +1241,7 @@ public boolean containsKey(Object key) {
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-23 13:46:16" itemprop="dateModified" datetime="2019-01-23T13:46:16+08:00">2019-01-23</time>
+                <time title="修改时间：2019-01-23 14:21:14" itemprop="dateModified" datetime="2019-01-23T14:21:14+08:00">2019-01-23</time>
               
             
           </span>
@@ -2482,81 +1294,19 @@ public boolean containsKey(Object key) {
 
       
         
+          <h3 id="题目：16-3Sum-Closest"><a href="#题目：16-3Sum-Closest" class="headerlink" title="题目：16. 3Sum Closest"></a>题目：16. 3Sum Closest</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>给定一整形数组，求其所有元素和为指定数值的子数组（仅含3个元素）。</li>
+<li>当不存在子数组元素和满足指定值的时候，返回离指定数值最近的情况下的子数组。</li>
+</ul>
+          <!--noindex-->
           
-            <a id="more"></a>
-<h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
-</ul>
-<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
-</ul>
-<h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
-</ol>
-<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
-</ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
-</ul>
-<blockquote>
-</blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
-}
-
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
-        }
-    }
-    return null;
-}
-
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
-}
-</code></pre><blockquote>
-</blockquote>
-<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
-</ul>
-<h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
-<li>基于LeetCode平台算法的一个刷题记录！</li>
-<li>已经共享至public repository：<a href="https://github.com/GZHarryAnonymous/LeetCode" target="_blank" rel="noopener">仓库链接</a></li>
-<li>欢迎题友们fork、push纠正相关错误、交流相关问题！(别忘了给颗星哦！)</li>
-<li>个人博客：<a href="https://gzharryanonymous.github.io/" target="_blank" rel="noopener">GZHarryAnonymous</a></li>
-<li>欢迎来访！当然，如果来访还打赏就更好啦！！！</li>
-<li>能力有限，希望有帮到你！</li>
-</ul>
-
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_16/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
           
+          <!--/noindex-->
         
       
     </div>
@@ -2617,7 +1367,7 @@ public boolean containsKey(Object key) {
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_28/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_15/">
 
     <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
       <meta itemprop="name" content="gz">
@@ -2637,7 +1387,7 @@ public boolean containsKey(Object key) {
           <h1 class="post-title" itemprop="name headline">
                 
                 
-                <a href="/2019/01/20/LeetCode/LeetCode_28/" class="post-title-link" itemprop="url">1.Two Sum</a>
+                <a href="/2019/01/20/LeetCode/LeetCode_15/" class="post-title-link" itemprop="url">15. 3Sum</a>
               
             
           </h1>
@@ -2662,7 +1412,7 @@ public boolean containsKey(Object key) {
                 
               
 
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
+              <time title="创建时间：2019-01-20 10:43:39" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:39+08:00">2019-01-20</time>
             
 
             
@@ -2679,7 +1429,7 @@ public boolean containsKey(Object key) {
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-23 13:46:16" itemprop="dateModified" datetime="2019-01-23T13:46:16+08:00">2019-01-23</time>
+                <time title="修改时间：2019-01-23 14:20:56" itemprop="dateModified" datetime="2019-01-23T14:20:56+08:00">2019-01-23</time>
               
             
           </span>
@@ -2732,81 +1482,772 @@ public boolean containsKey(Object key) {
 
       
         
+          <h3 id="题目：15-3Sum"><a href="#题目：15-3Sum" class="headerlink" title="题目：15. 3Sum"></a>题目：15. 3Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>给定一整形数组，求其所有元素和为零的子数组（仅含3个元素）。</li>
+</ul>
+          <!--noindex-->
           
-            <a id="more"></a>
-<h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
-</ul>
-<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
-</ul>
-<h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
-</ol>
-<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
-</ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
-</ul>
-<blockquote>
-</blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
-}
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_15/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
 
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
-        }
-    }
-    return null;
-}
+    
 
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
-}
-</code></pre><blockquote>
-</blockquote>
-<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
-</ul>
-<h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
-<li>基于LeetCode平台算法的一个刷题记录！</li>
-<li>已经共享至public repository：<a href="https://github.com/GZHarryAnonymous/LeetCode" target="_blank" rel="noopener">仓库链接</a></li>
-<li>欢迎题友们fork、push纠正相关错误、交流相关问题！(别忘了给颗星哦！)</li>
-<li>个人博客：<a href="https://gzharryanonymous.github.io/" target="_blank" rel="noopener">GZHarryAnonymous</a></li>
-<li>欢迎来访！当然，如果来访还打赏就更好啦！！！</li>
-<li>能力有限，希望有帮到你！</li>
-</ul>
+	<div>
+      
+    </div>
+	
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+    <div>
+      
+    </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_14/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="gz">
+      <meta itemprop="description" content="Just share with you!">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GZHarryAnonymous's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/20/LeetCode/LeetCode_14/" class="post-title-link" itemprop="url">14. Longest Common Prefix</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-20 10:43:38" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:38+08:00">2019-01-20</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-23 14:20:41" itemprop="dateModified" datetime="2019-01-23T14:20:41+08:00">2019-01-23</time>
+              
+            
+          </span>
 
           
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="题目：14-Longest-Common-Prefix"><a href="#题目：14-Longest-Common-Prefix" class="headerlink" title="题目：14. Longest Common Prefix"></a>题目：14. Longest Common Prefix</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>LCP:给定字符串数组，求其内部各个字符串间公共最长前缀子串。</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_14/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+	<div>
+      
+    </div>
+	
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+    <div>
+      
+    </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_13/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="gz">
+      <meta itemprop="description" content="Just share with you!">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GZHarryAnonymous's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/20/LeetCode/LeetCode_13/" class="post-title-link" itemprop="url">13. Roman to Integer</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-20 10:43:37" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:37+08:00">2019-01-20</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-23 14:20:30" itemprop="dateModified" datetime="2019-01-23T14:20:30+08:00">2019-01-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="题目：13-Roman-to-Integer"><a href="#题目：13-Roman-to-Integer" class="headerlink" title="题目：13. Roman to Integer"></a>题目：13. Roman to Integer</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>罗马数字转阿拉伯数字</li>
+<li>阿拉伯数字与罗马数字关系(I:1,V:5,X:10,L:50,C:100,D:500,M:1000)</li>
+<li>左减右加原则(IV=5-1=4,IX=10-1=9,LVIII=50+5+3=58)</li>
+<li>VIII=8没问题，但是VIIII是不能表示9的，应该是IX=9.同理有IV=4,XL=40,CD=400,CM=900</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_13/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+	<div>
+      
+    </div>
+	
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+    <div>
+      
+    </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_12/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="gz">
+      <meta itemprop="description" content="Just share with you!">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GZHarryAnonymous's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/20/LeetCode/LeetCode_12/" class="post-title-link" itemprop="url">12. Integer to Roman</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-20 10:43:36" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:36+08:00">2019-01-20</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-23 14:20:16" itemprop="dateModified" datetime="2019-01-23T14:20:16+08:00">2019-01-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="题目：12-Integer-to-Roman"><a href="#题目：12-Integer-to-Roman" class="headerlink" title="题目：12. Integer to Roman"></a>题目：12. Integer to Roman</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>阿拉伯数字转罗马数字</li>
+<li>阿拉伯数字与罗马数字关系(I:1,V:5,X:10,L:50,C:100,D:500,M:1000)</li>
+<li>左减右加原则(IV=5-1=4,IX=10-1=9,LVIII=50+5+3=58)</li>
+<li>VIII=8没问题，但是VIIII是不能表示9的，应该是IX=9.同理有IV=4,XL=40,CD=400,CM=900</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_12/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
+        
+      
+    </div>
+
+    
+
+	<div>
+      
+    </div>
+	
+    
+    
+    
+
+    
+
+    
+      
+    
+    
+    <div>
+      
+    </div>
+    
+
+    <footer class="post-footer">
+      
+
+      
+
+      
+
+      
+      
+        <div class="post-eof"></div>
+      
+    </footer>
+  </div>
+  
+  
+  
+  </article>
+
+
+    
+      
+
+  
+
+  
+  
+  
+
+  
+
+  <article class="post post-type-normal" itemscope="" itemtype="http://schema.org/Article">
+  
+  
+  
+  <div class="post-block">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_11/">
+
+    <span hidden itemprop="author" itemscope="" itemtype="http://schema.org/Person">
+      <meta itemprop="name" content="gz">
+      <meta itemprop="description" content="Just share with you!">
+      <meta itemprop="image" content="/images/header.jpg">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope="" itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="GZHarryAnonymous's blog">
+    </span>
+
+    
+      <header class="post-header">
+
+        
+        
+          <h1 class="post-title" itemprop="name headline">
+                
+                
+                <a href="/2019/01/20/LeetCode/LeetCode_11/" class="post-title-link" itemprop="url">11. Container With Most Water</a>
+              
+            
+          </h1>
+        
+
+        <div class="post-meta">
+          <span class="post-time">
+
+            
+            
+            
+
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">发表于</span>
+              
+
+              
+                
+              
+
+              <time title="创建时间：2019-01-20 10:43:35" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:35+08:00">2019-01-20</time>
+            
+
+            
+              
+
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-01-23 14:19:58" itemprop="dateModified" datetime="2019-01-23T14:19:58+08:00">2019-01-23</time>
+              
+            
+          </span>
+
+          
+            <span class="post-category">
+            
+              <span class="post-meta-divider">|</span>
+            
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              
+                <span class="post-meta-item-text">分类于</span>
+              
+              
+                <span itemprop="about" itemscope="" itemtype="http://schema.org/Thing"><a href="/categories/Algorithm/" itemprop="url" rel="index"><span itemprop="name">Algorithm</span></a></span>
+
+                
+                
+              
+            </span>
+          
+
+          
+            
+            
+          
+
+          
+          
+
+          
+
+          
+
+          
+
+        </div>
+      </header>
+    
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+      
+
+      
+        
+          <h3 id="题目：11-Container-With-Most-Water"><a href="#题目：11-Container-With-Most-Water" class="headerlink" title="题目：11. Container With Most Water"></a>题目：11. Container With Most Water</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>给你一个非负的数组，数组下标代表横轴位置，数组值代表竖轴位置，请自行脑补平面二维直角坐标系。接下来将横轴想象成地面、竖轴想象成隔板，如何选取其中的两个隔板使得其与地面构成的容器盛水最多。</li>
+</ul>
+          <!--noindex-->
+          
+            <div class="post-button text-center">
+              <a class="btn" href="/2019/01/20/LeetCode/LeetCode_11/#more" rel="contents">
+                阅读全文 &raquo;
+              </a>
+            </div>
+          
+          <!--/noindex-->
         
       
     </div>

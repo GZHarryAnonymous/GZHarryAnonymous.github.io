@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-23T06:13:49.823Z</updated>
+  <updated>2019-01-23T06:26:01.692Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -17,20 +17,24 @@
   <generator uri="http://hexo.io/">Hexo</generator>
   
   <entry>
-    <title>2. Add Two Numbers</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_2/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_2/</id>
-    <published>2019-01-20T02:43:26.000Z</published>
-    <updated>2019-01-23T06:13:49.823Z</updated>
+    <title>30. Substring with Concatenation of All Words</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_30/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_30/</id>
+    <published>2019-01-20T02:43:54.000Z</published>
+    <updated>2019-01-23T06:26:01.692Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;题目：2-Add-Two-Numbers&quot;&gt;&lt;a href=&quot;#题目：2-Add-Two-Numbers&quot; class=&quot;headerlink&quot; title=&quot;题目：2. Add Two Numbers&quot;&gt;&lt;/a&gt;题目：2. Add Two Numbers&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
-&lt;li&gt;两个非空链表，逆序存储，相加。&lt;/li&gt;
-&lt;li&gt;Example:&lt;/li&gt;
-&lt;li&gt;Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4)&lt;/li&gt;
-&lt;li&gt;Output: 7 -&amp;gt; 0 -&amp;gt; 8&lt;/li&gt;
-&lt;li&gt;Explanation: 342 + 465 = 807.&lt;/li&gt;
+      &lt;h3 id=&quot;题目：30-Substring-with-Concatenation-of-All-Words&quot;&gt;&lt;a href=&quot;#题目：30-Substring-with-Concatenation-of-All-Words&quot; class=&quot;headerlink&quot; title=&quot;题目：30. Substring with Concatenation of All Words&quot;&gt;&lt;/a&gt;题目：30. Substring with Concatenation of All Words&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;给定一个字符串和一个字符串数组。&lt;/li&gt;
+&lt;li&gt;字符串数组中每一个单词长度相同（字符个数一样）。&lt;/li&gt;
+&lt;li&gt;查看字符串中是否存在子串刚好由所有单词组成。&lt;/li&gt;
+&lt;li&gt;如果存在返回下标。&lt;/li&gt;
+&lt;li&gt;举例：&lt;/li&gt;
+&lt;li&gt;Input:&lt;/li&gt;
+&lt;li&gt;s = “barfoothefoobarman”,&lt;/li&gt;
+&lt;li&gt;words = [“foo”,”bar”]&lt;/li&gt;
+&lt;li&gt;Output: [0,9]&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
@@ -43,233 +47,16 @@
   </entry>
   
   <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_22/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_22/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
+    <title>29. Divide Two Integers</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_29/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_29/</id>
+    <published>2019-01-20T02:43:53.000Z</published>
+    <updated>2019-01-23T06:25:46.546Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_12/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_12/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_11/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_11/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_13/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_13/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_14/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_14/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_15/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_15/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_17/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_17/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_16/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_16/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_1/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_1/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T06:13:26.138Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
-&lt;li&gt;确定一给定数组中存在两数相加得到指定数值。&lt;/li&gt;
-&lt;li&gt;数组中元素不可重复使用，若解存在则唯一。&lt;/li&gt;
+      &lt;h3 id=&quot;题目：29-Divide-Two-Integers&quot;&gt;&lt;a href=&quot;#题目：29-Divide-Two-Integers&quot; class=&quot;headerlink&quot; title=&quot;题目：29. Divide Two Integers&quot;&gt;&lt;/a&gt;题目：29. Divide Two Integers&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;位运算实现加减乘除&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
@@ -282,261 +69,416 @@
   </entry>
   
   <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_18/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_18/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_19/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_19/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_20/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_20/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_21/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_21/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_23/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_23/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_10/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_10/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:40:18.489Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
-&lt;li&gt;确定一给定数组中存在两数相加得到指定数值。&lt;/li&gt;
-&lt;li&gt;数组中元素不可重复使用，若解存在则唯一。&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_24/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_24/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_26/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_26/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_25/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_25/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
-    
-    <summary type="html">
-    
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>1.Two Sum</title>
+    <title>28. Implement strStr()</title>
     <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_28/"/>
     <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_28/</id>
-    <published>2019-01-20T02:43:25.000Z</published>
-    <updated>2019-01-23T05:46:16.692Z</updated>
+    <published>2019-01-20T02:43:52.000Z</published>
+    <updated>2019-01-23T06:25:31.029Z</updated>
     
     <summary type="html">
     
-      
-      
-        
-        
-          &lt;a id=&quot;more&quot;&gt;&lt;/a&gt;
-&lt;h3 id=&quot;题目：1-Two-Sum&quot;&gt;&lt;a href=&quot;#题目：1-Two-Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：1. Two Sum&quot;&gt;&lt;/a&gt;题目：1. Two Sum&lt;/h3&gt;&lt;h6
-        
-      
+      &lt;h3 id=&quot;题目：28-Implement-strStr&quot;&gt;&lt;a href=&quot;#题目：28-Implement-strStr&quot; class=&quot;headerlink&quot; title=&quot;题目：28. Implement strStr()&quot;&gt;&lt;/a&gt;题目：28. Implement strStr()&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;Input: haystack = “hello”, needle = “ll”&lt;/li&gt;
+&lt;li&gt;Output: 2&lt;/li&gt;
+&lt;li&gt;Input: haystack = “aaaaa”, needle = “bba”&lt;/li&gt;
+&lt;li&gt;Output: -1&lt;/li&gt;
+&lt;li&gt;返回第一个匹配的模式子串的下标&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>27. Remove Element</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_27/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_27/</id>
+    <published>2019-01-20T02:43:51.000Z</published>
+    <updated>2019-01-23T06:25:18.666Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：27-Remove-Element&quot;&gt;&lt;a href=&quot;#题目：27-Remove-Element&quot; class=&quot;headerlink&quot; title=&quot;题目：27. Remove Element&quot;&gt;&lt;/a&gt;题目：27. Remove Element&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;移除给定整形数组中指定的元素并返回新数组元素个数。无需顾忌新数组元素以外的元素空间如何使用。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>26. Remove Duplicates from Sorted Array</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_26/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_26/</id>
+    <published>2019-01-20T02:43:50.000Z</published>
+    <updated>2019-01-23T06:24:41.575Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：26-Remove-Duplicates-from-Sorted-Array&quot;&gt;&lt;a href=&quot;#题目：26-Remove-Duplicates-from-Sorted-Array&quot; class=&quot;headerlink&quot; title=&quot;题目：26. Remove Duplicates from Sorted Array&quot;&gt;&lt;/a&gt;题目：26. Remove Duplicates from Sorted Array&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;去除给定整形有序数组的重复元素。并返回新数组的元素个数。&lt;/li&gt;
+&lt;li&gt;必须在给定数组上进行操作。&lt;/li&gt;
+&lt;li&gt;假设新数组长度为n，那么前n个元素各不相同且无需关注新数组n个元素之后的值如何。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>25. Reverse Nodes in k-Group</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_25/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_25/</id>
+    <published>2019-01-20T02:43:49.000Z</published>
+    <updated>2019-01-23T06:24:18.961Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：25-Reverse-Nodes-in-k-Group&quot;&gt;&lt;a href=&quot;#题目：25-Reverse-Nodes-in-k-Group&quot; class=&quot;headerlink&quot; title=&quot;题目：25. Reverse Nodes in k-Group&quot;&gt;&lt;/a&gt;题目：25. Reverse Nodes in k-Group&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;给定一个链表，K临近节点反转。&lt;/li&gt;
+&lt;li&gt;Given this linked list: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5&lt;/li&gt;
+&lt;li&gt;For k = 2, you should return: 2-&amp;gt;1-&amp;gt;4-&amp;gt;3-&amp;gt;5&lt;/li&gt;
+&lt;li&gt;For k = 3, you should return: 3-&amp;gt;2-&amp;gt;1-&amp;gt;4-&amp;gt;5&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>24. Swap Nodes in Pairs</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_24/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_24/</id>
+    <published>2019-01-20T02:43:48.000Z</published>
+    <updated>2019-01-23T06:23:46.900Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：24-Swap-Nodes-in-Pairs&quot;&gt;&lt;a href=&quot;#题目：24-Swap-Nodes-in-Pairs&quot; class=&quot;headerlink&quot; title=&quot;题目：24. Swap Nodes in Pairs&quot;&gt;&lt;/a&gt;题目：24. Swap Nodes in Pairs&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;Given 1-&amp;gt;2-&amp;gt;3-&amp;gt;4, you should return the list as 2-&amp;gt;1-&amp;gt;4-&amp;gt;3.&lt;/li&gt;
+&lt;li&gt;相邻节点两两相换。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>23. Merge k Sorted Lists</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_23/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_23/</id>
+    <published>2019-01-20T02:43:47.000Z</published>
+    <updated>2019-01-23T06:23:31.271Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：23-Merge-k-Sorted-Lists&quot;&gt;&lt;a href=&quot;#题目：23-Merge-k-Sorted-Lists&quot; class=&quot;headerlink&quot; title=&quot;题目：23. Merge k Sorted Lists&quot;&gt;&lt;/a&gt;题目：23. Merge k Sorted Lists&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;多路链表归并&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>22. Generate Parentheses</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_22/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_22/</id>
+    <published>2019-01-20T02:43:46.000Z</published>
+    <updated>2019-01-23T06:23:02.584Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：22-Generate-Parentheses&quot;&gt;&lt;a href=&quot;#题目：22-Generate-Parentheses&quot; class=&quot;headerlink&quot; title=&quot;题目：22. Generate Parentheses&quot;&gt;&lt;/a&gt;题目：22. Generate Parentheses&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.&lt;/li&gt;
+&lt;li&gt;For example, given n = 3, a solution set is:&lt;/li&gt;
+&lt;/ul&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+&lt;p&gt;[&lt;br&gt;  “((()))”,&lt;br&gt;  “(()())”,&lt;br&gt;  “(())()”,&lt;br&gt;  “()(())”,&lt;br&gt;  “()()()”&lt;br&gt;]&lt;/p&gt;
+&lt;blockquote&gt;
+&lt;/blockquote&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>21. Merge Two Sorted Lists</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_21/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_21/</id>
+    <published>2019-01-20T02:43:45.000Z</published>
+    <updated>2019-01-23T06:22:20.322Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：21-Merge-Two-Sorted-Lists&quot;&gt;&lt;a href=&quot;#题目：21-Merge-Two-Sorted-Lists&quot; class=&quot;headerlink&quot; title=&quot;题目：21. Merge Two Sorted Lists&quot;&gt;&lt;/a&gt;题目：21. Merge Two Sorted Lists&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;链表二路归并&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>20. Valid Parentheses</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_20/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_20/</id>
+    <published>2019-01-20T02:43:44.000Z</published>
+    <updated>2019-01-23T06:22:08.968Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：20-Valid-Parentheses&quot;&gt;&lt;a href=&quot;#题目：20-Valid-Parentheses&quot; class=&quot;headerlink&quot; title=&quot;题目：20. Valid Parentheses&quot;&gt;&lt;/a&gt;题目：20. Valid Parentheses&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;Given a string containing just the characters ‘(‘, ‘)’, ‘{‘, ‘}’, ‘[‘ and ‘]’, determine if the input string is valid.&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>19. Remove Nth Node From End of List</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_19/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_19/</id>
+    <published>2019-01-20T02:43:43.000Z</published>
+    <updated>2019-01-23T06:21:57.344Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：19-Remove-Nth-Node-From-End-of-List&quot;&gt;&lt;a href=&quot;#题目：19-Remove-Nth-Node-From-End-of-List&quot; class=&quot;headerlink&quot; title=&quot;题目：19. Remove Nth Node From End of List&quot;&gt;&lt;/a&gt;题目：19. Remove Nth Node From End of List&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;求给定链表移除倒数(从尾部开始数)第n个节点后的新链表。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>18. 4Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_18/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_18/</id>
+    <published>2019-01-20T02:43:42.000Z</published>
+    <updated>2019-01-23T06:21:44.026Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：18-4Sum&quot;&gt;&lt;a href=&quot;#题目：18-4Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：18. 4Sum&quot;&gt;&lt;/a&gt;题目：18. 4Sum&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;给定一个数组和目标值，求元素之和等于目标值的所有子数组(包含4个元素)。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>17. Letter Combinations of a Phone Number</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_17/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_17/</id>
+    <published>2019-01-20T02:43:41.000Z</published>
+    <updated>2019-01-23T06:21:28.485Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：17-Letter-Combinations-of-a-Phone-Number&quot;&gt;&lt;a href=&quot;#题目：17-Letter-Combinations-of-a-Phone-Number&quot; class=&quot;headerlink&quot; title=&quot;题目：17. Letter Combinations of a Phone Number&quot;&gt;&lt;/a&gt;题目：17. Letter Combinations of a Phone Number&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;计算器(3乘以3)，1不映射。2映射（abc），3映射（def）以此类推，9映射（wxyz）。&lt;/li&gt;
+&lt;li&gt;给定”23”&lt;/li&gt;
+&lt;li&gt;输出[“ad”, “ae”, “af”, “bd”, “be”, “bf”, “cd”, “ce”, “cf”]&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>16. 3Sum Closest</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_16/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_16/</id>
+    <published>2019-01-20T02:43:40.000Z</published>
+    <updated>2019-01-23T06:21:14.711Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：16-3Sum-Closest&quot;&gt;&lt;a href=&quot;#题目：16-3Sum-Closest&quot; class=&quot;headerlink&quot; title=&quot;题目：16. 3Sum Closest&quot;&gt;&lt;/a&gt;题目：16. 3Sum Closest&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;给定一整形数组，求其所有元素和为指定数值的子数组（仅含3个元素）。&lt;/li&gt;
+&lt;li&gt;当不存在子数组元素和满足指定值的时候，返回离指定数值最近的情况下的子数组。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>15. 3Sum</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_15/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_15/</id>
+    <published>2019-01-20T02:43:39.000Z</published>
+    <updated>2019-01-23T06:20:56.184Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：15-3Sum&quot;&gt;&lt;a href=&quot;#题目：15-3Sum&quot; class=&quot;headerlink&quot; title=&quot;题目：15. 3Sum&quot;&gt;&lt;/a&gt;题目：15. 3Sum&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;给定一整形数组，求其所有元素和为零的子数组（仅含3个元素）。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>14. Longest Common Prefix</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_14/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_14/</id>
+    <published>2019-01-20T02:43:38.000Z</published>
+    <updated>2019-01-23T06:20:41.758Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：14-Longest-Common-Prefix&quot;&gt;&lt;a href=&quot;#题目：14-Longest-Common-Prefix&quot; class=&quot;headerlink&quot; title=&quot;题目：14. Longest Common Prefix&quot;&gt;&lt;/a&gt;题目：14. Longest Common Prefix&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;LCP:给定字符串数组，求其内部各个字符串间公共最长前缀子串。&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>13. Roman to Integer</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_13/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_13/</id>
+    <published>2019-01-20T02:43:37.000Z</published>
+    <updated>2019-01-23T06:20:30.434Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：13-Roman-to-Integer&quot;&gt;&lt;a href=&quot;#题目：13-Roman-to-Integer&quot; class=&quot;headerlink&quot; title=&quot;题目：13. Roman to Integer&quot;&gt;&lt;/a&gt;题目：13. Roman to Integer&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;罗马数字转阿拉伯数字&lt;/li&gt;
+&lt;li&gt;阿拉伯数字与罗马数字关系(I:1,V:5,X:10,L:50,C:100,D:500,M:1000)&lt;/li&gt;
+&lt;li&gt;左减右加原则(IV=5-1=4,IX=10-1=9,LVIII=50+5+3=58)&lt;/li&gt;
+&lt;li&gt;VIII=8没问题，但是VIIII是不能表示9的，应该是IX=9.同理有IV=4,XL=40,CD=400,CM=900&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>12. Integer to Roman</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_12/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_12/</id>
+    <published>2019-01-20T02:43:36.000Z</published>
+    <updated>2019-01-23T06:20:16.642Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：12-Integer-to-Roman&quot;&gt;&lt;a href=&quot;#题目：12-Integer-to-Roman&quot; class=&quot;headerlink&quot; title=&quot;题目：12. Integer to Roman&quot;&gt;&lt;/a&gt;题目：12. Integer to Roman&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;阿拉伯数字转罗马数字&lt;/li&gt;
+&lt;li&gt;阿拉伯数字与罗马数字关系(I:1,V:5,X:10,L:50,C:100,D:500,M:1000)&lt;/li&gt;
+&lt;li&gt;左减右加原则(IV=5-1=4,IX=10-1=9,LVIII=50+5+3=58)&lt;/li&gt;
+&lt;li&gt;VIII=8没问题，但是VIIII是不能表示9的，应该是IX=9.同理有IV=4,XL=40,CD=400,CM=900&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
+  
+  <entry>
+    <title>11. Container With Most Water</title>
+    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_11/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_11/</id>
+    <published>2019-01-20T02:43:35.000Z</published>
+    <updated>2019-01-23T06:19:58.887Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;题目：11-Container-With-Most-Water&quot;&gt;&lt;a href=&quot;#题目：11-Container-With-Most-Water&quot; class=&quot;headerlink&quot; title=&quot;题目：11. Container With Most Water&quot;&gt;&lt;/a&gt;题目：11. Container With Most Water&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;给你一个非负的数组，数组下标代表横轴位置，数组值代表竖轴位置，请自行脑补平面二维直角坐标系。接下来将横轴想象成地面、竖轴想象成隔板，如何选取其中的两个隔板使得其与地面构成的容器盛水最多。&lt;/li&gt;
+&lt;/ul&gt;
     
     </summary>
     

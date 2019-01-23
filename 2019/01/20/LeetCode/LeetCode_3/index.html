@@ -113,18 +113,18 @@
 
 
 
-  <meta name="description" content="题目：1. Two Sum问题描述： 确定一给定数组中存在两数相加得到指定数值。 数组中元素不可重复使用，若解存在则唯一。">
+  <meta name="description" content="题目：3. Longest Substring Without Repeating Characters问题描述： 给定一字符串，求最长无重复子串。 Example 1: Input: “abcabcbb” Output: 3  Explanation: The answer is “abc”, with the length of 3.">
 <meta name="keywords" content="LeetCode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1.Two Sum">
+<meta property="og:title" content="3. Longest Substring Without Repeating Characters">
 <meta property="og:url" content="http://yoursite.com/2019/01/20/LeetCode/LeetCode_3/index.html">
 <meta property="og:site_name" content="GZHarryAnonymous&#39;s blog">
-<meta property="og:description" content="题目：1. Two Sum问题描述： 确定一给定数组中存在两数相加得到指定数值。 数组中元素不可重复使用，若解存在则唯一。">
+<meta property="og:description" content="题目：3. Longest Substring Without Repeating Characters问题描述： 给定一字符串，求最长无重复子串。 Example 1: Input: “abcabcbb” Output: 3  Explanation: The answer is “abc”, with the length of 3.">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-23T05:40:18.489Z">
+<meta property="og:updated_time" content="2019-01-23T06:17:33.206Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1.Two Sum">
-<meta name="twitter:description" content="题目：1. Two Sum问题描述： 确定一给定数组中存在两数相加得到指定数值。 数组中元素不可重复使用，若解存在则唯一。">
+<meta name="twitter:title" content="3. Longest Substring Without Repeating Characters">
+<meta name="twitter:description" content="题目：3. Longest Substring Without Repeating Characters问题描述： 给定一字符串，求最长无重复子串。 Example 1: Input: “abcabcbb” Output: 3  Explanation: The answer is “abc”, with the length of 3.">
 
 
 
@@ -143,7 +143,7 @@
   };
 </script>
 
-  <title>1.Two Sum | GZHarryAnonymous's blog</title>
+  <title>3. Longest Substring Without Repeating Characters | GZHarryAnonymous's blog</title>
   
 
 
@@ -447,7 +447,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">1.Two Sum
+          <h1 class="post-title" itemprop="name headline">3. Longest Substring Without Repeating Characters
 
               
             
@@ -473,7 +473,7 @@
                 
               
 
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
+              <time title="创建时间：2019-01-20 10:43:27" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:27+08:00">2019-01-20</time>
             
 
             
@@ -490,7 +490,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-23 13:40:18" itemprop="dateModified" datetime="2019-01-23T13:40:18+08:00">2019-01-23</time>
+                <time title="修改时间：2019-01-23 14:17:33" itemprop="dateModified" datetime="2019-01-23T14:17:33+08:00">2019-01-23</time>
               
             
           </span>
@@ -549,69 +549,73 @@
       
 
       
-        <h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
+        <h3 id="题目：3-Longest-Substring-Without-Repeating-Characters"><a href="#题目：3-Longest-Substring-Without-Repeating-Characters" class="headerlink" title="题目：3. Longest Substring Without Repeating Characters"></a>题目：3. Longest Substring Without Repeating Characters</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>给定一字符串，求最长无重复子串。</li>
+<li>Example 1:</li>
+<li>Input: “abcabcbb”</li>
+<li>Output: 3 </li>
+<li>Explanation: The answer is “abc”, with the length of 3. </li>
 </ul>
 <a id="more"></a>
 <h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
+<li>子序列可以不连续，但子串必须连续。</li>
+<li>无重复。</li>
 </ul>
 <h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
+<li>暴力破解：遍历每一个子串，通过定义一个函数用于确定当前子串是否有重复的字符。</li>
+<li>滑动窗口：构建变量i和j记录子串的始末下标：i，j分别是两个指向，j先一步一步向前走，如果j重复了，则i走一步。<br>始终关注的点是i到j这个区间的最长无重复子串。进一步的优化，如果j和i到j区间的某一个k点重复了，则i可以直接跨步到k+1。</li>
 </ol>
 <h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
+<li>滑动的窗口是一个形象的比喻，或者你可以把i到j想象成是橡皮筋的两端，不重复是橡皮筋弹性拉伸的前提，而回弹的步长可以是一步一个脚印，但也可以跨步向前。具体问题具体分析。</li>
+<li>在实践过程中，有一个很重要的点就是将字符与其对应下标进行一一映射，而关联的方法不唯一：可以采用HashMap、HashSet和ASCII（int[] index = new int[128];数组的下标对应字符的ASCII，而数组值对应字符在字符串中的位置下标）.</li>
 </ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
-</ul>
+<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ol>
+<li>依赖倒置原则：依赖抽象，不依赖具体，所以变量声明可以用Map&lt;Character, Integer&gt; map = new HashMap&lt;&gt;();</li>
+<li>HashMap中使用的泛型需要是包装类，不可以是基本数据类型。因为基本数据类型没有继承Object类，没有方法，当然也无法调用hashcode()方法和equals()方法。而包装类是继承Object类的。</li>
+<li>特别的，当HashMap存储自定义对象的时候，需要按照自己的需求重写hashcode()和equal()方法。否则，每new一次就创建一个新的对象，面对相同对象（仅引用不同）的情况，导致HashMap存储重复值。详解见hashcode源码。</li>
+<li>HashMap实现Map接口，存储键值对，使用put和get方法，使用key计算hashcode值，速度稍快。</li>
+<li>HashSet实现Set接口，仅存储对象，使用add和remove方法，使用成员对象计算hashcode，速度稍慢。</li>
+<li>相关源码如下：</li>
+</ol>
 <blockquote>
 </blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
+<pre><code> public boolean equals(Object obj) {
+    return (this == obj);
 }
 
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
+public boolean equals(Object o) {
+    if (o == this)
+        return true;
+    if (!(o instanceof Map))
+        return false;
+    Map&lt;?,?&gt; m = (Map&lt;?,?&gt;) o;
+    if (m.size() != size())
+        return false;
+    try {
+        Iterator&lt;Entry&lt;K,V&gt;&gt; i = entrySet().iterator();
+        while (i.hasNext()) {
+            Entry&lt;K,V&gt; e = i.next();
+            K key = e.getKey();
+            V value = e.getValue();
+            if (value == null) {
+                if (!(m.get(key)==null &amp;&amp; m.containsKey(key)))
+                    return false;
+            } else {
+                if (!value.equals(m.get(key)))
+                    return false;
+            }
         }
+    } catch (ClassCastException unused) {
+        return false;
+    } catch (NullPointerException unused) {
+        return false;
     }
-    return null;
-}
-
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
+    return true;
 }
 </code></pre><blockquote>
 </blockquote>
 <h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
+<li>Java的好处是封装，而且有人帮你封装，你可以直接用一些方法。坏处是被封装的方法不是你自己写的。</li>
 </ul>
 <h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
 <li>基于LeetCode平台算法的一个刷题记录！</li>
@@ -702,8 +706,8 @@ public boolean containsKey(Object key) {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/20/LeetCode/LeetCode_30/" rel="next" title="1.Two Sum">
-                <i class="fa fa-chevron-left"></i> 1.Two Sum
+              <a href="/2019/01/20/LeetCode/LeetCode_2/" rel="next" title="2. Add Two Numbers">
+                <i class="fa fa-chevron-left"></i> 2. Add Two Numbers
               </a>
             
           </div>
@@ -712,8 +716,8 @@ public boolean containsKey(Object key) {
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/20/LeetCode/LeetCode_29/" rel="prev" title="1.Two Sum">
-                1.Two Sum <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/20/LeetCode/LeetCode_4/" rel="prev" title="4. Median of Two Sorted Arrays">
+                4. Median of Two Sorted Arrays <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -885,7 +889,7 @@ public boolean containsKey(Object key) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目：1-Two-Sum"><span class="nav-text">题目：1. Two Sum</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#问题描述："><span class="nav-text">问题描述：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#题目分析："><span class="nav-text">题目分析：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#求解方法："><span class="nav-text">求解方法：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#算法思想："><span class="nav-text">算法思想：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#知识点扩展："><span class="nav-text">知识点扩展：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#总结感悟："><span class="nav-text">总结感悟：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#相关说明："><span class="nav-text">相关说明：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目：3-Longest-Substring-Without-Repeating-Characters"><span class="nav-text">题目：3. Longest Substring Without Repeating Characters</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#问题描述："><span class="nav-text">问题描述：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#题目分析："><span class="nav-text">题目分析：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#求解方法："><span class="nav-text">求解方法：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#算法思想："><span class="nav-text">算法思想：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#知识点扩展："><span class="nav-text">知识点扩展：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#总结感悟："><span class="nav-text">总结感悟：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#相关说明："><span class="nav-text">相关说明：</span></a></li></ol></li></ol></div>
             
 
           </div>

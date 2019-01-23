@@ -113,18 +113,18 @@
 
 
 
-  <meta name="description" content="题目：1. Two Sum问题描述： 确定一给定数组中存在两数相加得到指定数值。 数组中元素不可重复使用，若解存在则唯一。  题目分析： 注意限制条件。  求解方法： 暴力破解。  通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)  算法思想： 在关联过程中直接判断：map.contains(target-cu">
+  <meta name="description" content="题目：22. Generate Parentheses问题描述： Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is:    [  “((()))”,  “">
 <meta name="keywords" content="LeetCode">
 <meta property="og:type" content="article">
-<meta property="og:title" content="1.Two Sum">
+<meta property="og:title" content="22. Generate Parentheses">
 <meta property="og:url" content="http://yoursite.com/2019/01/20/LeetCode/LeetCode_22/index.html">
 <meta property="og:site_name" content="GZHarryAnonymous&#39;s blog">
-<meta property="og:description" content="题目：1. Two Sum问题描述： 确定一给定数组中存在两数相加得到指定数值。 数组中元素不可重复使用，若解存在则唯一。  题目分析： 注意限制条件。  求解方法： 暴力破解。  通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)  算法思想： 在关联过程中直接判断：map.contains(target-cu">
+<meta property="og:description" content="题目：22. Generate Parentheses问题描述： Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is:    [  “((()))”,  “">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-01-23T05:46:16.692Z">
+<meta property="og:updated_time" content="2019-01-23T06:23:02.584Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="1.Two Sum">
-<meta name="twitter:description" content="题目：1. Two Sum问题描述： 确定一给定数组中存在两数相加得到指定数值。 数组中元素不可重复使用，若解存在则唯一。  题目分析： 注意限制条件。  求解方法： 暴力破解。  通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)  算法思想： 在关联过程中直接判断：map.contains(target-cu">
+<meta name="twitter:title" content="22. Generate Parentheses">
+<meta name="twitter:description" content="题目：22. Generate Parentheses问题描述： Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is:    [  “((()))”,  “">
 
 
 
@@ -143,7 +143,7 @@
   };
 </script>
 
-  <title>1.Two Sum | GZHarryAnonymous's blog</title>
+  <title>22. Generate Parentheses | GZHarryAnonymous's blog</title>
   
 
 
@@ -447,7 +447,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">1.Two Sum
+          <h1 class="post-title" itemprop="name headline">22. Generate Parentheses
 
               
             
@@ -473,7 +473,7 @@
                 
               
 
-              <time title="创建时间：2019-01-20 10:43:25" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:25+08:00">2019-01-20</time>
+              <time title="创建时间：2019-01-20 10:43:46" itemprop="dateCreated datePublished" datetime="2019-01-20T10:43:46+08:00">2019-01-20</time>
             
 
             
@@ -490,7 +490,7 @@
                 
                   <span class="post-meta-item-text">更新于</span>
                 
-                <time title="修改时间：2019-01-23 13:46:16" itemprop="dateModified" datetime="2019-01-23T13:46:16+08:00">2019-01-23</time>
+                <time title="修改时间：2019-01-23 14:23:02" itemprop="dateModified" datetime="2019-01-23T14:23:02+08:00">2019-01-23</time>
               
             
           </span>
@@ -549,71 +549,74 @@
       
 
       
-        <a id="more"></a>
-<h3 id="题目：1-Two-Sum"><a href="#题目：1-Two-Sum" class="headerlink" title="题目：1. Two Sum"></a>题目：1. Two Sum</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
-<li>确定一给定数组中存在两数相加得到指定数值。</li>
-<li>数组中元素不可重复使用，若解存在则唯一。</li>
-</ul>
-<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><ul>
-<li>注意限制条件。</li>
-</ul>
-<h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
-<li>暴力破解。 </li>
-<li>通过HashMap将数组值与下标进行关联。在关联过程中直接判断：Map.contains(target-currentElement)</li>
-</ol>
-<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ul>
-<li>在关联过程中直接判断：map.contains(target-currentElement)的可行性在于：</li>
-<li>每一次新加入的元素都会与map中已有的元素进行比较，如下：</li>
-<li>1,2,3,4……</li>
-<li>(1,2)</li>
-<li>(1,3),(2,3)</li>
-<li>(1,4),(2,3),(3,4)</li>
-<li>……</li>
-</ul>
-<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
-<li>HashMap的存储结构是数组(散列桶)+链表</li>
-<li>HashMap的get方法返回null时有两种情况:getNode(hash(key),key)==null 或者 getNode(hash(key),key)!=null但是e.value==null(value可以put为空值)</li>
-<li>containsKey(Object key)通过判别getNode(hash(key),key)的返回值来确定key值的存在性。</li>
-<li>在更新1.8版本之后，结点数量达到8个将链表转为红黑树。少于6个则使用链表。</li>
-<li>源码如下:</li>
+        <h3 id="题目：22-Generate-Parentheses"><a href="#题目：22-Generate-Parentheses" class="headerlink" title="题目：22. Generate Parentheses"></a>题目：22. Generate Parentheses</h3><h6 id="问题描述："><a href="#问题描述：" class="headerlink" title="问题描述："></a>问题描述：</h6><ul>
+<li>Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses.</li>
+<li>For example, given n = 3, a solution set is:</li>
 </ul>
 <blockquote>
 </blockquote>
-<pre><code>public V get(Object key) {
-    Node&lt;K,V&gt; e;
-    return (e = getNode(hash(key), key)) == null ? null : e.value;
-}
-
-final Node&lt;K,V&gt; getNode(int hash, Object key) {
-    Node&lt;K,V&gt;[] tab; Node&lt;K,V&gt; first, e; int n; K k;
-    if ((tab = table) != null &amp;&amp; (n = tab.length) &gt; 0 &amp;&amp;
-        (first = tab[(n - 1) &amp; hash]) != null) {
-        if (first.hash == hash &amp;&amp; // always check first node
-            ((k = first.key) == key || (key != null &amp;&amp; key.equals(k))))
-            return first;
-        if ((e = first.next) != null) {
-            if (first instanceof TreeNode)
-                return ((TreeNode&lt;K,V&gt;)first).getTreeNode(hash, key);
-            do {
-                if (e.hash == hash &amp;&amp;
-                    ((k = e.key) == key || (key != null &amp;&amp; key.equals(k))))
-                    return e;
-            } while ((e = e.next) != null);
-        }
+<p>[<br>  “((()))”,<br>  “(()())”,<br>  “(())()”,<br>  “()(())”,<br>  “()()()”<br>]</p>
+<blockquote>
+</blockquote>
+<a id="more"></a>
+<h6 id="题目分析："><a href="#题目分析：" class="headerlink" title="题目分析："></a>题目分析：</h6><h6 id="求解方法："><a href="#求解方法：" class="headerlink" title="求解方法："></a>求解方法：</h6><ol>
+<li>暴力求解</li>
+<li>回溯</li>
+<li>闭包数</li>
+</ol>
+<h6 id="算法思想："><a href="#算法思想：" class="headerlink" title="算法思想："></a>算法思想：</h6><ol>
+<li>pow(2,2n)种可能中逐一判别。</li>
+<li>其实就是一棵树，不过生长方式有限定，left(open)能生长就生长，但要满足open_num&lt;=n。right(close)能生长就生长，但要保证close_num&lt;=n且close_num&lt;=open_num。open在前close在后。最后从根节点到每一个叶节点的路径都是一种合理的可能。</li>
+<li>如果n=1，那么一定是”()”情况。我们假设generate(j)可以生成左右括号个数都为j的所有合理情况。那么现在:”(“+”generate(i)的所有合理情况”+”)”+”generate(n-1-i)的所有合理情况”当i从0取到n-1时，就是穷尽所有可能之日。有点数学归纳法的感觉。</li>
+</ol>
+<h6 id="知识点扩展："><a href="#知识点扩展：" class="headerlink" title="知识点扩展："></a>知识点扩展：</h6><ul>
+<li>有HashSet和TreeSet都实现了Set接口。</li>
+<li>HashSet由于是集合，所以元素不可以重复，即便是null只能有一个，查找元素的过程是首先计算对象的HashCode值，然后通过HashCode值直接对应到存储该对象的区域调用equals方法进行查找，从而提高了效率。</li>
+<li>Object的equals方法是根据两个对象的内存地址判断两个对象是否相等。所以Set插入Object时，需要重写equals方法，进一步区分内存地址不同但内容相同的“相同”对象。</li>
+</ul>
+<blockquote>
+</blockquote>
+<pre><code>// 覆写equals方法
+public boolean equals (Object obj){
+    // 地址相等，则肯定是同一个对象
+    if(this==obj){
+        return true;
     }
-    return null;
+    // 类型不同，则肯定不是同一类对象
+    if(!(obj instanceof Person)){
+        return false;
+    } 
+    // 类型相同，向下转型
+    Person per=(Person) obj;
+    // 如果两个对象的姓名和性别相同，则是同一个人
+    if(this.name.equals(per.name)&amp;&amp;this.sex.equals(per.sex))
+        return true;
+    return false;
 }
-
-public boolean containsKey(Object key) {
-    return getNode(hash(key), key) != null;
-}
+    当然为了保证不同对象有不同的内存地址，需要重写hashCode方法
+ // 覆写hashCode方法  
+public int hashCode(){
+        return this.name.hashCode();//name相当于主键哦！
+        }
 </code></pre><blockquote>
 </blockquote>
-<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><ul>
-<li>程序=数据结构+算法，该题解的思路关键在于数据结构（HashMap）的运用。</li>
-<li>HashMap中hashCode的计算方法有许多数学机理，感兴趣的自行了解。</li>
+<ul>
+<li>而TreeSet可以自定义Comparator对插入的元素进行相应的排序。        </li>
+<li><p>与HashSet完全类似，TreeSet里面绝大部分方法都市直接调用TreeMap方法来实现的。</p>
+</li>
+<li><p>相同点：</p>
+</li>
+<li>TreeMap和TreeSet都是有序的集合，也就是说他们存储的值都是排好序的。</li>
+<li>TreeMap和TreeSet都是非同步集合，因此他们不能在多线程之间共享，不过可以使用方法。</li>
+<li>Collections.synchroinzedMap()来实现同步。</li>
+<li>运行速度都要比Hash集合慢，他们内部对元素的操作时间复杂度为O(logN)，而HashMap/HashSet则为O(1)。</li>
+<li>不同点：</li>
+<li>最主要的区别就是TreeSet和TreeMap分别实现Set和Map接口。</li>
+<li>TreeSet只存储一个对象，而TreeMap存储两个对象Key和Value（仅仅key对象有序）</li>
+<li>TreeSet中不能有重复对象，而TreeMap中可以存在。</li>
+<li>TreeMap&lt;K,V&gt;是有序的Map，底层使用了红黑树这种数据结构来实现。红黑树是一种应用非常广泛的树结构，在这里先简单说下红黑树这种数据结构相比较其他树类型结构的优缺点：红黑树是一种自平衡的二叉查找树，也叫对称二叉B树，红黑树的查找、插入和删除的时间复杂度都为O(logn)，应用非常广泛。红黑树相对于AVL树（平衡二叉树），牺牲了部分平衡性（红黑树不是完全平衡的二叉树）以换取插入/删除操作时更少的旋转操作，整体在插入/删除的性能上要优于AVL树。所以很多在内存中排序的数据结构都使用红黑树来而不是使用AVL树来存储。红黑树相对于B-树和B+树，相同节点的情况下红黑树由于深度比B-和B+树要深的多，对IO读写非常频繁，所以适合放在内存中的少量读取，而B-和B+树由于每个节点元素非常之多，访问IO的次数就相对少，适合存储在磁盘中的大量数据，类似数据库记录的存储结构。</li>
 </ul>
-<h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
+<h6 id="总结感悟："><a href="#总结感悟：" class="headerlink" title="总结感悟："></a>总结感悟：</h6><h6 id="相关说明："><a href="#相关说明：" class="headerlink" title="相关说明："></a>相关说明：</h6><ul>
 <li>基于LeetCode平台算法的一个刷题记录！</li>
 <li>已经共享至public repository：<a href="https://github.com/GZHarryAnonymous/LeetCode" target="_blank" rel="noopener">仓库链接</a></li>
 <li>欢迎题友们fork、push纠正相关错误、交流相关问题！(别忘了给颗星哦！)</li>
@@ -702,8 +705,8 @@ public boolean containsKey(Object key) {
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/01/20/LeetCode/LeetCode_12/" rel="next" title="1.Two Sum">
-                <i class="fa fa-chevron-left"></i> 1.Two Sum
+              <a href="/2019/01/20/LeetCode/LeetCode_21/" rel="next" title="21. Merge Two Sorted Lists">
+                <i class="fa fa-chevron-left"></i> 21. Merge Two Sorted Lists
               </a>
             
           </div>
@@ -712,8 +715,8 @@ public boolean containsKey(Object key) {
 
           <div class="post-nav-prev post-nav-item">
             
-              <a href="/2019/01/20/LeetCode/LeetCode_2/" rel="prev" title="2. Add Two Numbers">
-                2. Add Two Numbers <i class="fa fa-chevron-right"></i>
+              <a href="/2019/01/20/LeetCode/LeetCode_23/" rel="prev" title="23. Merge k Sorted Lists">
+                23. Merge k Sorted Lists <i class="fa fa-chevron-right"></i>
               </a>
             
           </div>
@@ -885,7 +888,7 @@ public boolean containsKey(Object key) {
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目：1-Two-Sum"><span class="nav-text">题目：1. Two Sum</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#问题描述："><span class="nav-text">问题描述：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#题目分析："><span class="nav-text">题目分析：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#求解方法："><span class="nav-text">求解方法：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#算法思想："><span class="nav-text">算法思想：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#知识点扩展："><span class="nav-text">知识点扩展：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#总结感悟："><span class="nav-text">总结感悟：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#相关说明："><span class="nav-text">相关说明：</span></a></li></ol></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#题目：22-Generate-Parentheses"><span class="nav-text">题目：22. Generate Parentheses</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#问题描述："><span class="nav-text">问题描述：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#题目分析："><span class="nav-text">题目分析：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#求解方法："><span class="nav-text">求解方法：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#算法思想："><span class="nav-text">算法思想：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#知识点扩展："><span class="nav-text">知识点扩展：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#总结感悟："><span class="nav-text">总结感悟：</span></a></li><li class="nav-item nav-level-6"><a class="nav-link" href="#相关说明："><span class="nav-text">相关说明：</span></a></li></ol></li></ol></div>
             
 
           </div>
