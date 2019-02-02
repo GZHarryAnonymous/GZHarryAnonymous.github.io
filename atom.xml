@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-01-23T06:26:01.692Z</updated>
+  <updated>2019-02-01T11:09:22.413Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -15,6 +15,31 @@
   </author>
   
   <generator uri="http://hexo.io/">Hexo</generator>
+  
+  <entry>
+    <title>41. First Missing Positive</title>
+    <link href="http://yoursite.com/2019/02/01/LeetCode/LeetCode_41/"/>
+    <id>http://yoursite.com/2019/02/01/LeetCode/LeetCode_41/</id>
+    <published>2019-02-01T02:43:54.000Z</published>
+    <updated>2019-02-01T11:09:22.413Z</updated>
+    
+    <summary type="html">
+    
+      &lt;h3 id=&quot;��L��41-First-Missing-Positive&quot;&gt;&lt;a href=&quot;#��L��41-First-Missing-Positive&quot; class=&quot;headerlink&quot; title=&quot;��Ŀ��41. First Missing Positive&quot;&gt;&lt;/a&gt;��Ŀ��41. First Missing Positive&lt;/h3&gt;&lt;h6 id=&quot;����������&quot;&gt;&lt;a href=&quot;#����������&quot; class=&quot;headerlink&quot; title=&quot;����������&quot;&gt;&lt;/a&gt;����������&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;����һ��������������顣&lt;/li&gt;
+&lt;li&gt;�ҵ�ȱʧ����С���Ρ�&lt;/li&gt;
+&lt;li&gt;Input: [7,8,9,11,12]&lt;/li&gt;
+&lt;li&gt;Output: 1&lt;/li&gt;
+&lt;/ul&gt;
+    
+    </summary>
+    
+      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
+    
+    
+      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
+    
+  </entry>
   
   <entry>
     <title>30. Substring with Concatenation of All Words</title>
@@ -456,28 +481,6 @@
 &lt;li&gt;阿拉伯数字与罗马数字关系(I:1,V:5,X:10,L:50,C:100,D:500,M:1000)&lt;/li&gt;
 &lt;li&gt;左减右加原则(IV=5-1=4,IX=10-1=9,LVIII=50+5+3=58)&lt;/li&gt;
 &lt;li&gt;VIII=8没问题，但是VIIII是不能表示9的，应该是IX=9.同理有IV=4,XL=40,CD=400,CM=900&lt;/li&gt;
-&lt;/ul&gt;
-    
-    </summary>
-    
-      <category term="Algorithm" scheme="http://yoursite.com/categories/Algorithm/"/>
-    
-    
-      <category term="LeetCode" scheme="http://yoursite.com/tags/LeetCode/"/>
-    
-  </entry>
-  
-  <entry>
-    <title>11. Container With Most Water</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_11/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_11/</id>
-    <published>2019-01-20T02:43:35.000Z</published>
-    <updated>2019-01-23T06:19:58.887Z</updated>
-    
-    <summary type="html">
-    
-      &lt;h3 id=&quot;题目：11-Container-With-Most-Water&quot;&gt;&lt;a href=&quot;#题目：11-Container-With-Most-Water&quot; class=&quot;headerlink&quot; title=&quot;题目：11. Container With Most Water&quot;&gt;&lt;/a&gt;题目：11. Container With Most Water&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
-&lt;li&gt;给你一个非负的数组，数组下标代表横轴位置，数组值代表竖轴位置，请自行脑补平面二维直角坐标系。接下来将横轴想象成地面、竖轴想象成隔板，如何选取其中的两个隔板使得其与地面构成的容器盛水最多。&lt;/li&gt;
 &lt;/ul&gt;
     
     </summary>
