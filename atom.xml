@@ -6,7 +6,7 @@
   <link href="/atom.xml" rel="self"/>
   
   <link href="http://yoursite.com/"/>
-  <updated>2019-02-01T11:09:22.413Z</updated>
+  <updated>2019-02-02T03:56:46.454Z</updated>
   <id>http://yoursite.com/</id>
   
   <author>
@@ -18,16 +18,16 @@
   
   <entry>
     <title>41. First Missing Positive</title>
-    <link href="http://yoursite.com/2019/02/01/LeetCode/LeetCode_41/"/>
-    <id>http://yoursite.com/2019/02/01/LeetCode/LeetCode_41/</id>
+    <link href="http://yoursite.com/2019/02/01/LeetCode_40/LeetCode_41/"/>
+    <id>http://yoursite.com/2019/02/01/LeetCode_40/LeetCode_41/</id>
     <published>2019-02-01T02:43:54.000Z</published>
-    <updated>2019-02-01T11:09:22.413Z</updated>
+    <updated>2019-02-02T03:56:46.454Z</updated>
     
     <summary type="html">
     
-      &lt;h3 id=&quot;��L��41-First-Missing-Positive&quot;&gt;&lt;a href=&quot;#��L��41-First-Missing-Positive&quot; class=&quot;headerlink&quot; title=&quot;��Ŀ��41. First Missing Positive&quot;&gt;&lt;/a&gt;��Ŀ��41. First Missing Positive&lt;/h3&gt;&lt;h6 id=&quot;����������&quot;&gt;&lt;a href=&quot;#����������&quot; class=&quot;headerlink&quot; title=&quot;����������&quot;&gt;&lt;/a&gt;����������&lt;/h6&gt;&lt;ul&gt;
-&lt;li&gt;����һ��������������顣&lt;/li&gt;
-&lt;li&gt;�ҵ�ȱʧ����С���Ρ�&lt;/li&gt;
+      &lt;h3 id=&quot;题目：41-First-Missing-Positive&quot;&gt;&lt;a href=&quot;#题目：41-First-Missing-Positive&quot; class=&quot;headerlink&quot; title=&quot;题目：41. First Missing Positive&quot;&gt;&lt;/a&gt;题目：41. First Missing Positive&lt;/h3&gt;&lt;h6 id=&quot;问题描述：&quot;&gt;&lt;a href=&quot;#问题描述：&quot; class=&quot;headerlink&quot; title=&quot;问题描述：&quot;&gt;&lt;/a&gt;问题描述：&lt;/h6&gt;&lt;ul&gt;
+&lt;li&gt;给定一个无序的整形数组。&lt;/li&gt;
+&lt;li&gt;找到缺失的最小整形。&lt;/li&gt;
 &lt;li&gt;Input: [7,8,9,11,12]&lt;/li&gt;
 &lt;li&gt;Output: 1&lt;/li&gt;
 &lt;/ul&gt;
@@ -43,8 +43,8 @@
   
   <entry>
     <title>30. Substring with Concatenation of All Words</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_30/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_30/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_30/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_30/</id>
     <published>2019-01-20T02:43:54.000Z</published>
     <updated>2019-01-23T06:26:01.692Z</updated>
     
@@ -73,8 +73,8 @@
   
   <entry>
     <title>29. Divide Two Integers</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_29/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_29/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_29/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_29/</id>
     <published>2019-01-20T02:43:53.000Z</published>
     <updated>2019-01-23T06:25:46.546Z</updated>
     
@@ -95,8 +95,8 @@
   
   <entry>
     <title>28. Implement strStr()</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_28/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_28/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_28/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_28/</id>
     <published>2019-01-20T02:43:52.000Z</published>
     <updated>2019-01-23T06:25:31.029Z</updated>
     
@@ -121,8 +121,8 @@
   
   <entry>
     <title>27. Remove Element</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_27/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_27/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_27/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_27/</id>
     <published>2019-01-20T02:43:51.000Z</published>
     <updated>2019-01-23T06:25:18.666Z</updated>
     
@@ -143,8 +143,8 @@
   
   <entry>
     <title>26. Remove Duplicates from Sorted Array</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_26/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_26/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_26/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_26/</id>
     <published>2019-01-20T02:43:50.000Z</published>
     <updated>2019-01-23T06:24:41.575Z</updated>
     
@@ -167,8 +167,8 @@
   
   <entry>
     <title>25. Reverse Nodes in k-Group</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_25/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_25/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_25/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_25/</id>
     <published>2019-01-20T02:43:49.000Z</published>
     <updated>2019-01-23T06:24:18.961Z</updated>
     
@@ -192,8 +192,8 @@
   
   <entry>
     <title>24. Swap Nodes in Pairs</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_24/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_24/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_24/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_24/</id>
     <published>2019-01-20T02:43:48.000Z</published>
     <updated>2019-01-23T06:23:46.900Z</updated>
     
@@ -215,8 +215,8 @@
   
   <entry>
     <title>23. Merge k Sorted Lists</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_23/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_23/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_23/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_23/</id>
     <published>2019-01-20T02:43:47.000Z</published>
     <updated>2019-01-23T06:23:31.271Z</updated>
     
@@ -237,8 +237,8 @@
   
   <entry>
     <title>22. Generate Parentheses</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_22/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_22/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_22/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_22/</id>
     <published>2019-01-20T02:43:46.000Z</published>
     <updated>2019-01-23T06:23:02.584Z</updated>
     
@@ -265,8 +265,8 @@
   
   <entry>
     <title>21. Merge Two Sorted Lists</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_21/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_21/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_21/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_21/</id>
     <published>2019-01-20T02:43:45.000Z</published>
     <updated>2019-01-23T06:22:20.322Z</updated>
     
@@ -287,8 +287,8 @@
   
   <entry>
     <title>20. Valid Parentheses</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_20/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_20/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_20/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_20/</id>
     <published>2019-01-20T02:43:44.000Z</published>
     <updated>2019-01-23T06:22:08.968Z</updated>
     
@@ -309,8 +309,8 @@
   
   <entry>
     <title>19. Remove Nth Node From End of List</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_19/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_19/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_19/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_19/</id>
     <published>2019-01-20T02:43:43.000Z</published>
     <updated>2019-01-23T06:21:57.344Z</updated>
     
@@ -331,8 +331,8 @@
   
   <entry>
     <title>18. 4Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_18/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_18/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_18/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_18/</id>
     <published>2019-01-20T02:43:42.000Z</published>
     <updated>2019-01-23T06:21:44.026Z</updated>
     
@@ -353,8 +353,8 @@
   
   <entry>
     <title>17. Letter Combinations of a Phone Number</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_17/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_17/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_17/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_17/</id>
     <published>2019-01-20T02:43:41.000Z</published>
     <updated>2019-01-23T06:21:28.485Z</updated>
     
@@ -377,8 +377,8 @@
   
   <entry>
     <title>16. 3Sum Closest</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_16/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_16/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_16/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_16/</id>
     <published>2019-01-20T02:43:40.000Z</published>
     <updated>2019-01-23T06:21:14.711Z</updated>
     
@@ -400,8 +400,8 @@
   
   <entry>
     <title>15. 3Sum</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_15/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_15/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_15/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_15/</id>
     <published>2019-01-20T02:43:39.000Z</published>
     <updated>2019-01-23T06:20:56.184Z</updated>
     
@@ -422,8 +422,8 @@
   
   <entry>
     <title>14. Longest Common Prefix</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_14/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_14/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_14/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_14/</id>
     <published>2019-01-20T02:43:38.000Z</published>
     <updated>2019-01-23T06:20:41.758Z</updated>
     
@@ -444,8 +444,8 @@
   
   <entry>
     <title>13. Roman to Integer</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_13/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_13/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_13/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_13/</id>
     <published>2019-01-20T02:43:37.000Z</published>
     <updated>2019-01-23T06:20:30.434Z</updated>
     
@@ -469,8 +469,8 @@
   
   <entry>
     <title>12. Integer to Roman</title>
-    <link href="http://yoursite.com/2019/01/20/LeetCode/LeetCode_12/"/>
-    <id>http://yoursite.com/2019/01/20/LeetCode/LeetCode_12/</id>
+    <link href="http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_12/"/>
+    <id>http://yoursite.com/2019/01/20/LeetCode_1-30/LeetCode_12/</id>
     <published>2019-01-20T02:43:36.000Z</published>
     <updated>2019-01-23T06:20:16.642Z</updated>
     
